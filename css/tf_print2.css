@@ -18,21 +18,31 @@
 
 
 /* Hidden Objects */
-
-
+nav.horizontal, nav.vertical, section#left, section#right, body h1, footer {
+   display: none;
+}
 
 /* Page Box Styles */
-
-
+@page {
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
 
 /* Header Styles */
-
-
+header > img {
+   display: block;
+   width: 100%;
+}
 
 /* Typography Styles */
+header > article {
+   margin: .2in;
+}
 
-
-
+aside {
+   font-size: 24pts;
+   line-height: 26pts;
+}
 /* Hypertext Styles */
 
 

@@ -18,7 +18,7 @@
 
 
 /* Hidden Objects */
-nav.horizontal, nav.vertical, section#left, section#right, body h1, footer {
+nav.horizontal, nav.vertical, body > header > h1, section#left, footer {
    display: none;
 }
 
@@ -29,24 +29,56 @@ nav.horizontal, nav.vertical, section#left, section#right, body h1, footer {
 }
 
 /* Header Styles */
-header > img {
+header img {
    display: block;
    width: 100%;
 }
 
 /* Typography Styles */
-header > article {
-   margin: .2in;
+header article {
+   margin-bottom: .2in;
+}
+
+article h1 {
+   font-size: 24pt;
+   line-height: 26pt;
 }
 
 aside {
-   font-size: 24pts;
-   line-height: 26pts;
+   background-color: rgb(211, 211, 211);
+   margin-top: 0.3in;
 }
+
+aside h1 {
+   font-size: 18pt;
+   line-height: 20pt;
+}
+
+aside img {
+   width: 0.8in;
+}
+
+p {
+   font-size: 12pt;
+   margin-top: 0.1in;
+   margin-bottom: 0.1in;
+   widows: 3;
+   orphans: 3;
+}
+
 /* Hypertext Styles */
-
-
-
+a {
+   color: black;
+   font-weight: bold;
+   text-decoration: none;
+   word-wrap: break-word;
+}
 
 /* Page Break Styles */
+   aside::after {
+      page-break-after: always;
+   }
 
+   ol, ul, li {
+      page-break-inside: avoid;
+   }
